@@ -29,6 +29,8 @@ go install google.golang.org/grpc
 
 最后在 `$GOPATH/src` 目录下可以找到这些依赖包。
 
+这里，我们提供下载好的go依赖包，再目录`go_rely`中
+
 ### 2. 利用 gRPC 的依赖包生成 proto 文件
 
 在github上下载proto插件，用于生成 proto 文件，配置好环境变量

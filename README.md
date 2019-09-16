@@ -69,3 +69,11 @@ Go后端的使用，参见 GoRXL 目录下的介绍
 有偿信息查询：企业批量个性化查询需要支付一定费用；
 
 微众银行作为联盟生态的一个节点，将“融信链”上沉淀下来的可信数据作为学生信贷、征信的依据。杜绝不良P2P校园贷，助力普惠金融。
+
+### 4. 获奖展示
+
+本作品用于参加微众银行举办的`首届金融科技高校大赛`，并获得三等奖名次。
+
+##### 可以访问一下网站[了解详情](https://mp.weixin.qq.com/s?__biz=MzU5NTg0MjA4MA==&mid=2247485527&idx=1&sn=7f8351596f38fd0d95c50ad321836d89&chksm=fe6a8d18c91d040ececccb84e2d9400c24a5d233cf0f5bfe44b554b9085faa76518717280517&mpshare=1&scene=1&srcid=&sharer_sharetime=1568618790497&sharer_shareid=c8fa107db2039a2eddc7fabdb6a39c6b&key=a00a174091495fb1c8c39b05357aca51d28937f4ee95b6e0a22ed415bc5746256fad1b13c73264c73553c10640c97f3979d363da2e10191f0d4e1a748c2f9d6ea85f3feb5acce1f8725036e8baa1ab9d&ascene=1&uin=OTg2NTk3NTA2&devicetype=Windows+10&version=62060833&lang=zh_CN&pass_ticket=67jRHxzay8kNrF6b5oXOT%2F23BcbQFUEocIovv06kBzc%2FW6XuWGDX6p%2FV2Rdfpshf)
+
+![获奖作品](./img/获奖作品.png) 
