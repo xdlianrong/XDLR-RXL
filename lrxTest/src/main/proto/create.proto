@@ -1,0 +1,81 @@
+syntax = "proto3"; //Protocol Buffers Version
+package proto;
+
+//定义的service
+service CreateUser{
+    rpc CreateUser (CreateUserRequest) returns (CreateUserResponse){}
+}
+message CreateUserRequest {
+    uint64 uid = 1;
+}
+message CreateUserResponse{
+    bool result = 1;//判断符，成功或失败
+}
+
+service CreateData{
+    rpc CreateData (CreateDataRequest) returns (CreateDataResponse){}
+}
+message CreateDataRequest{
+    uint64 uid = 1;
+    uint64 dataNumber = 2;
+    string dataType = 3;
+    string dataHash = 4;
+    string zeroInfo = 5;
+    string robustInfo = 6;
+}
+message CreateDataResponse{
+    string txId = 1;
+    bool result = 2;//判断符，成功或失败
+}
+
+service FindCopyright{
+    rpc FindCopyright (FindCopyrightRequest) returns (FindCopyrightResponse){}
+}
+message FindCopyrightRequest{
+    uint64 ID = 1;
+    string robustInfo = 2;
+    string screenShot = 3;
+    string url = 4;
+}
+message FindCopyrightResponse{
+    string txId = 1;
+    bool   result = 2;//判断符，成功或失败
+}
+
+service AuthRight{
+    rpc AuthRight (AuthRightRequest) returns (AuthRightResponse){}
+}
+message AuthRightRequest{
+    uint64 uid = 1;
+    uint64 dataNumber = 2;
+    string dataHash = 3;
+    string zeroInfo = 4;
+    string robustInfo = 5;
+    string confirmMessage = 6;
+    string confirmTime = 7;
+}
+message AuthRightResponse{
+    string txId = 1;
+    bool   result = 2;//判断符，成功或失败
+}
+
+service Confirm{
+    rpc Confirm (ConfirmRequest) returns (ConfirmResponse){}
+}
+
+message ConfirmRequest{
+    uint64 uid = 1;
+    uint64 dataNumber = 2;
+    string dataType = 3;
+    string dataHash = 4;
+    string zeroInfo = 5;
+    string robustInfo = 6;
+    string screenShot = 7;
+    string url = 8;
+    string confirmMessage = 9;
+    string confirmTime = 10;
+}
+message ConfirmResponse{
+    string txId = 1;
+    bool   result = 2;//判断符，成功或失败
+}

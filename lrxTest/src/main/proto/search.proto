@@ -1,0 +1,73 @@
+syntax = "proto3"; //Protocol Buffers Version
+package proto;
+//定义的service
+
+service SearchData{
+    rpc SearchData (SearchDataRequest) returns (SearchDataResponse){}
+}
+message SearchDataRequest{
+    string txId = 1;
+}
+message SearchDataResponse{
+    uint64 uid = 1;
+    uint64 dataNumber = 2;
+    string dataType = 3;
+    string dataHash = 4;
+    string zeroInfo = 5;
+    string robustInfo = 6;
+    bool   result = 7;//判断符，成功或失败
+}
+
+
+service SearchFindCopyright{
+    rpc SearchFindCopyright (SearchFindCopyrightRequest) returns (SearchFindCopyrightResponse){}
+}
+message SearchFindCopyrightResponse{
+    uint64 ID = 1;
+    string robustInfo = 2;
+    string screenShot = 3;
+    string url = 4;
+    bool   result = 5;//判断符，成功或失败
+}
+message SearchFindCopyrightRequest{
+    string txId = 1;
+}
+
+service SearchAuthRight{
+    rpc SearchAuthRight (SearchAuthRightRequest) returns (SearchAuthRightResponse){}
+}
+message SearchAuthRightRequest{
+    string txId = 1;
+}
+message SearchAuthRightResponse{
+    uint64 uid = 1;
+    uint64 dataNumber = 2;
+    string dataHash = 3;
+    string zeroInfo = 4;
+    string robustInfo = 5;
+    string confirmMessage = 6;
+    string confirmTime = 7;
+    bool   result = 8;//判断符，成功或失败
+}
+
+
+service SearchConfirm{
+    rpc SearchConfirm (SearchConfirmRequest) returns (SearchConfirmResponse){}
+}
+message SearchConfirmResponse{
+    uint64 uid = 1;
+    uint64 dataNumber = 2;
+    string dataType = 3;
+    string dataHash = 4;
+    string zeroInfo = 5;
+    string robustInfo = 6;
+    string screenShot = 7;
+    string url = 8;
+    string confirmMessage = 9;
+    string confirmTime = 10;
+    bool   result = 11;//判断符，成功或失败
+}
+message SearchConfirmRequest{
+    string txId = 1;
+    bool   result = 2;//判断符，成功或失败
+}

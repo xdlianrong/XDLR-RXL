@@ -17,13 +17,16 @@
     </bean>
 
     <bean id="groupChannelConnectionsConfig" class="org.fisco.bcos.channel.handler.GroupChannelConnectionsConfig">
+        <property name="caCert" value="ca.crt" />
+        <property name="sslCert" value="sdk.crt" />
+        <property name="sslKey" value="sdk.key" />
         <property name="allChannelConnections">
             <list>
                 <bean id="group1"  class="org.fisco.bcos.channel.handler.ChannelConnections">
                     <property name="groupId" value="1" />
                     <property name="connectionsStr">
                         <list>
-                            <value>47.92.104.197:20200</value>
+                            <value>127.0.0.1:20200</value>
                         </list>
                     </property>
                 </bean>

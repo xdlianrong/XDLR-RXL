@@ -36,10 +36,7 @@ public class CreditCertClient {
     private Credentials credentials;
 
     //合约地址,填写已经部署的合约地址
-//    public String contractaddress = "0x0e6191a1f760ed5adb3a384b2d906b5475541a64";
-//    public String contractaddress = "0xfdd31ce4eafc4063d3c34c75bcff9ff9f8955429";
-//    public String contractaddress = "0xa749c62747c82d9543374f38dd41422b35baf131";
-    public String contractaddress = "0x522e764439e99ac84ed14855639929f7a8e95117";
+    public String contractaddress = "0xbdf871cdcfc2c9348c4ec74ac1445a320265101c";
 
     public CreditCertClient() {
         try {

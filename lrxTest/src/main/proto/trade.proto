@@ -1,0 +1,33 @@
+syntax = "proto3"; //Protocol Buffers Version
+package proto;
+
+//定义的service
+service Trade{
+    rpc Trade (TradeRequest) returns (TradeResponse){}
+}
+message TradeRequest{
+    uint64 from = 1;
+    uint64 to = 2;
+    uint64 value = 3;
+    uint64 mold = 4;
+    string dataHash = 5;
+}
+message TradeResponse{
+    string txId = 1;
+    bool   result = 2;//判断符，成功或失败
+}
+
+service GetTrade{
+    rpc GetTrade (GetTradeRequest) returns (GetTradeResponse){}
+}
+message GetTradeRequest{
+    string txId = 1;
+}
+message GetTradeResponse{
+    uint64 from = 1;
+    uint64 to = 2;
+    uint64 value = 3;
+    uint64 mold = 4;
+    string dataHash = 5;
+    bool   result = 6;//判断符，成功或失败
+}
