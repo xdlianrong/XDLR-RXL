@@ -1,0 +1,14 @@
+/*-------------public--------------*/
+html{ width:100%; overFlow-x: hidden; OVERFLOW: scroll; }
+body{ margin:0px; padding:0px; background:#fff;}
+ul{ list-style:none; margin:0px; padding:0px;}
+.fl{ float:left;}
+.fr{ float:right;}
+.cl{ clear:both;}
+*{ font-family:"微软雅黑"; font-size:12px; color:#5f5f5f;}
+a{font-family:"微软雅黑"; font-size:12px; color:#5f5f5f; text-decoration:none;}
+a:hover{ color:#f00; border:0px;}
+img{ border:0px;}
+
+.nr{ width:500px;text-align:center; margin: 0 auto; font-size:22px;color: #43c6fe; margin-top: 270px;}
+.jump{ width: 500px;text-align:center; margin: 0 auto; font-size:16px; margin-top: 10px;}

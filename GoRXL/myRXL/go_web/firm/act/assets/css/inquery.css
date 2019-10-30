@@ -1,0 +1,83 @@
+.black1{
+	position: relative;
+	height: 86px;
+	margin-bottom: 20px;
+	transition: all 0.5s;
+	cursor: pointer;
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 100px;
+	margin-right: 100px;
+	display: table;
+	width: 90%;
+	border-bottom: 1px dashed;
+}
+.word1s{
+	padding-left: 50px;
+	font-size: 20px;
+	line-height: 30px;
+	font-weight:1;
+}
+.words-info{
+	float: right;
+	display: inline-block;
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 1;
+	width: 68%;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.lg1{
+	width: 30%;
+	display: inline-block;
+	float: left;
+	text-align: left;
+}
+.lg{
+	display: inline-block;
+	float: left;
+}
+.lg2{
+	width: 60%;
+	display: inline-block;
+}
+
+.black2{
+	position: relative;
+	height: 50px;
+	cursor: pointer;
+	display: table;
+	width: 100%;
+	line-height: 50px;
+	font-family: "宋体";'
+}
+
+.p111{
+	display: inline-block;
+	width: 35%;
+	text-align: right;
+}
+.black3{
+	position: relative;
+	height: 50px;
+	cursor: pointer;
+	display: table;
+	width: 50%;
+	line-height: 50px;
+	font-family: "宋体";
+	float: left;
+}
+
+.t_r{
+	padding-left: 10%;
+}
+.word2s{
+	font-size: 20px;
+	line-height: 30px;
+	font-weight:1;
+}
+.p222{
+	display: inline-block;
+	width: 21%;
+}
